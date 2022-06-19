@@ -1,4 +1,3 @@
-
 .ms-fs-1 {
   font-size: 4rem;
 }
@@ -17,6 +16,17 @@
 .ms-fs-6 {
   font-size: 1rem;
 }
-.z-index-1{
+@each $var in (100,200,300,400,500,600,700,800,900) {
+  .ms-fw-#{$var} {
+    font-weight: $var;
+  }
+}
+
+.z-index-1 {
   z-index: 1;
+}
+@for $var from 0 to 10 {
+  .gap-#{$var} {
+    gap: #{0.25 * $var}rem;
+  }
 }

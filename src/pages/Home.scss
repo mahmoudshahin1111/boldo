@@ -1,80 +1,113 @@
-@import '../theme/variables';
-.ms-section-1{
-    background-color: map-get($colors, "color-2");
-    padding-top: 42px;
-    padding-left: 100px;
-    padding-right: 100px;
+@import "../theme/variables";
+
+
+.ms-section-1 {
+  background-color: map-get($colors, "color-2");
+  padding-top: 2.625rem;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+  position: relative;
+  overflow: hidden;
+  .bg-cycle {
+    position: absolute;
+    width:  80rem;
+    height: 80rem;
+    right: -40.8rem;
+    top: -49.3125rem;
+    z-index: 0;
+    background: #1c3d5b;
+    border-radius: 50%;
+  }
+  .ms-hero-section {
     position: relative;
-    overflow: hidden;
-    .bg-cycle{
-        position: absolute;
-        top: -850px;
-        right: -600px;
-        width: 1293px;
-        height: 1293px;
-        z-index: 0;
-        background: linear-gradient(to left,rgba($color: map-get($colors,'color-2'), $alpha: 0.5), rgba($color: map-get($colors,'color-4'), $alpha: 0.08));
-        border-radius: 50%;
-    }
-    .ms-hero-section{
-        margin-top: 64px;
-  
-    }
-    .ms-info-section{
-        color: map-get($colors,'color-4');
-        .head{
-            line-height: 72px;
+    margin-top: 4rem;
+    display: flex;
+    z-index: 1;
+    div:nth-child(1) {
+      flex: 1;
+      color: map-get($colors, "color-1");
+      h2 {
+        line-height: 72px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+      }
+      p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+      }
+      .ms-buttons {
+        display: flex;
+        gap: 1.5rem;
+        .ms-buy-template {
+          padding: 16px 56px;
+          text-decoration: none;
+          border-radius: 56px;
+          font-weight: 700;
         }
-        .sub-head{
-            line-height: 28px;
-            font-weight: 400;
+        .ms-explore {
+          padding: 16px 56px;
+          text-decoration: none;
+          border-radius: 56px;
+          font-weight: 700;
         }
-    }
-    .ms-logos-slider{
-        margin-top: 56px;
-        margin-bottom: 42px;
-        padding: 42px 0;
-        position: relative;
-        .ms-shadow{
-            position: absolute;
-            top: 0;
-            height: 100%;
-            z-index: 2;
-            border-radius: 50%;
-            &.ms-left{
-                left: -20px;
-                width: 180px;
-                background: linear-gradient(90deg, rgba($color: map-get($colors,'color-2'), $alpha: 1),rgba($color: map-get($colors,'color-2'), $alpha: 0.8));
-            }
-            &.ms-right{
-                right: -20px;
-                width: 300px;
-                background: linear-gradient(-90deg, rgba($color: map-get($colors,'color-2'), $alpha: 1),rgba($color: map-get($colors,'color-2'), $alpha: 0.8));
-            }
-        }
-    }
-    .ms-buy-template{
-        padding: 16px 56px;
-        text-decoration: none;
-        border-radius: 56px;
-        font-weight: 700;
-    }
-    .ms-buy-explore{
-       
-        padding: 16px 56px;
-        text-decoration: none;
-        border-radius: 56px;
-        font-weight: 700;
-       
-    }
-    .ms-button{
-        border: 2px solid map-get($colors, "color-4");
-        color: map-get($colors, "color-4");
-        background-color: transparent;
-        &:hover{
-            background-color: map-get($colors, "secondary");
+        a {
+          border: 2px solid map-get($colors, "color-4");
+          color: map-get($colors, "color-4");
+          background-color: transparent;
+          &:hover {
+            background: #65e4a3;
             color: map-get($colors, "color-2");
-            border: 2px solid transparent;
+            border: 2px solid #69e6a6;
+          }
         }
+      }
     }
+    div:nth-child(2) {
+      & > img {
+        margin-bottom: 46px;
+      }
+      div:nth-child(2) {
+        display: flex;
+        gap: 2.4156rem;
+      }
+    }
+  }
+
+  .ms-logos-slider {
+    margin-bottom: 3.7rem;
+    padding: 2.0625rem 1.625rem .75rem 1.625rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-right: .875rem;
+    margin-left: .875rem;
+    .ms-shadow {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      z-index: 2;
+      border-radius: 50%;
+      &.ms-left {
+        left: -20px;
+        width: 180px;
+        background: linear-gradient(
+          to right,
+          rgba($color: map-get($colors, "color-2"), $alpha: 1),
+          rgba($color: map-get($colors, "color-2"), $alpha: 0.05)
+        );
+      }
+      &.ms-right {
+        right: -20px;
+        width: 300px;
+        background: linear-gradient(
+          to left,
+          rgba($color: map-get($colors, "color-2"), $alpha: 1),
+          rgba($color: map-get($colors, "color-2"), $alpha: 0.05)
+        );
+      }
+    }
+  }
 }

@@ -3,7 +3,7 @@ import logo from "../theme/images/Logo.svg";
 import "./TopNavigation.scss";
 export default function TopNavigation() {
   return (
-    <div className="ms-header d-flex flex-row">
+    <div className="ms-header d-flex flex-row z-index-1">
       <Link to="/">
         <img src={logo} alt="logo"></img>
       </Link>
