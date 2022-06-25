@@ -1,25 +1,27 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "../theme/images/Logo.svg";
-import MenuAsset from '../theme/images/menu.svg';
+import MenuAsset from "../theme/images/menu.svg";
 import "./TopNavigation.scss";
 export default function TopNavigation() {
-  const [menuToggled,setMenuToggled] = useState(false);
+  const [menuToggled, setMenuToggled] = useState(false);
   return (
     <div className="ms__header">
       <div>
-      <Link to="/">
-        <img src={logo} alt="logo"></img>
-      </Link>
-      <button className="ms__toggler" onClick={()=>setMenuToggled(!menuToggled)}>
-        <img width="30px" height="30px" alt="" src={MenuAsset}></img>
-      </button>
+        <a>
+          <img src={logo} alt="logo"></img>
+        </a>
+        <button
+          className="ms__toggler"
+          onClick={() => setMenuToggled(!menuToggled)}
+        >
+          <img width="30px" height="30px" alt="" src={MenuAsset}></img>
+        </button>
       </div>
-      <div className={'ms__links ' + (menuToggled?'ms__active':'')}>
-        <Link to="/products">Products</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/about">About</Link>
-        <Link to="/login">Log in</Link>
+      <div className={"ms__links " + (menuToggled ? "ms__active" : "")}>
+        <a>Products</a>
+        <a>Services</a>
+        <a>About</a>
+        <a>Log in</a>
       </div>
     </div>
   );
