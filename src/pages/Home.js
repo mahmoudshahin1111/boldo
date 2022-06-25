@@ -16,7 +16,6 @@ import section6mainImage from "../theme/images/section6mainImage.png";
 import section6arrowDown from "../theme/images/section6arrowDown.png";
 import section7card1 from "../theme/images/section7card1.png";
 import section3mark from "../theme/images/section3mark.png";
-import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import "swiper/css";
@@ -364,7 +363,7 @@ function Section3() {
           <img src={section3mark} alt="section3connect"></img>
           <span>Business-to-consumer long tail.</span>
         </div>
-        <Link to="/">Start now</Link>
+        <a>Start now</a>
       </div>
     </div>
   );
@@ -381,9 +380,9 @@ function Section2() {
           <p>
             Learning curve network effects <br></br> return on investment.
           </p>
-          <Link to="/">
+          <a>
             Explore page <img src={rightArrow} alt="rightArrow"></img>
-          </Link>
+          </a>
         </div>
         <div className="ms__card">
           <img src={section2card2} alt="section-2-card-2"></img>
@@ -391,9 +390,9 @@ function Section2() {
           <p>
             Learning curve network effects <br></br> return on investment.
           </p>
-          <Link to="/">
+          <a>
             Explore page <img src={rightArrow} alt="rightArrow"></img>
-          </Link>
+          </a>
         </div>
         <div className="ms__card">
           <img src={section2card3} alt="section-2-card-3"></img>
@@ -401,9 +400,9 @@ function Section2() {
           <p>
             Learning curve network effects <br></br> return on investment.
           </p>
-          <Link to="/">
+          <a>
             Explore page <img src={rightArrow} alt="rightArrow"></img>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
@@ -425,12 +424,12 @@ function Section1() {
             deployment non-disclosure.
           </p>
           <div className="ms__buttons">
-            <Link className="ms__buy__template" to="/">
+            <a className="ms__buy__template">
               Buy template
-            </Link>
-            <Link className="ms__explore" to="/">
+            </a>
+            <a className="ms__explore">
               Explore
-            </Link>
+            </a>
           </div>
         </div>
         <div>
