@@ -10,7 +10,7 @@
   padding-right: 6.25rem;
   position: relative;
   overflow: hidden;
-  .ms-hero-section {
+  .ms__hero__section {
     position: relative;
     margin-top: 4rem;
     display: flex;
@@ -30,16 +30,16 @@
         font-size: 1rem;
         line-height: 1.75rem;
       }
-      .ms-buttons {
+      .ms__buttons {
         display: flex;
         gap: 1.5rem;
-        .ms-buy-template {
+        .ms__buy__template {
           padding: 16px 56px;
           text-decoration: none;
           border-radius: 56px;
           font-weight: 700;
         }
-        .ms-explore {
+        .ms__explore {
           padding: 16px 56px;
           text-decoration: none;
           border-radius: 56px;
@@ -68,7 +68,7 @@
     }
   }
 
-  .ms-logos-slider {
+  .ms__logos__slider {
     margin-bottom: 3.7rem;
     padding: 2.0625rem 1.625rem 0.75rem 1.625rem;
     position: relative;
@@ -76,13 +76,13 @@
     flex-direction: row;
     margin-right: 0.875rem;
     margin-left: 0.875rem;
-    .ms-shadow {
+    .ms__shadow {
       position: absolute;
       top: 0;
       height: 100%;
       z-index: 2;
       border-radius: 50%;
-      &.ms-left {
+      &.ms__left {
         left: -20px;
         width: 180px;
         background: linear-gradient(
@@ -91,7 +91,7 @@
           rgba($color: map-get($colors, "color-2"), $alpha: 0.05)
         );
       }
-      &.ms-right {
+      &.ms__right {
         right: -20px;
         width: 300px;
         background: linear-gradient(
@@ -104,7 +104,7 @@
   }
 }
 
-.section-2 {
+.ms__section__2 {
   display: flex;
   flex-direction: column;
   margin-top: 5.25rem;
@@ -163,7 +163,7 @@
   }
 }
 
-.section__3 {
+.ms__section__3 {
   display: flex;
   flex-direction: row;
   gap: 9.375rem;
@@ -203,7 +203,7 @@
   }
 }
 
-.section__4 {
+.ms__section__4 {
   display: flex;
   flex-direction: row;
   gap: 10rem;
@@ -263,7 +263,7 @@
   }
 }
 
-.section__5 {
+.ms__section__5 {
   display: flex;
   flex-direction: column;
   background: #0a2640;
@@ -340,7 +340,7 @@
   }
 }
 
-.section__6 {
+.ms__section__6 {
   display: flex;
   flex-direction: column;
   margin: 7.5rem 9.375rem;
@@ -465,6 +465,12 @@
     font-weight: 700;
     font-size: 1.25rem;
     color: #0a2640;
+    cursor: pointer;
+    &:hover {
+      background-color: #65e4a3;
+      color: #0a2640;
+      border: 2px solid #65e4a3;
+    }
   }
 }
 
@@ -523,7 +529,7 @@
   }
 }
 
-.footer {
+.ms__footer {
   display: flex;
   flex-direction: row;
   gap: 11.1875rem;
@@ -563,7 +569,7 @@
     }
   }
   .ms__badge {
-    padding: .0625rem .875rem;
+    padding: 0.0625rem 0.875rem;
     background: #65e4a3;
     border-radius: 120px;
     font-weight: 700;
@@ -573,29 +579,140 @@
   }
 }
 
-
-@media screen and (max-width:1300px) {
-  .ms__section__1{
+@media screen and (max-width: map-get($break-points,"md")) {
+  .ms__section__1 {
     background-image: none;
     display: flex;
     flex-direction: column;
-    .ms-hero-section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    .ms__hero__section {
       display: flex;
       flex-direction: column;
       margin-top: 0;
       padding-top: 0;
-      gap:2rem;
-      .ms-buttons{
-        flex-direction: column;
+      gap: 2rem;
+      .ms__buttons {
+        display: flex;
+        flex-direction: row;
         width: fit-content;
-        text-align: center;
-        align-items: center;
+        width: 100%;
+      }
+      img {
+        width: 100%;
       }
     }
-    .ms-logos-slider {
-      .ms-shadow{
+    .ms__logos__slider {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      .ms__shadow {
+        &.ms__left {
+          width: 50px;
+          left: -20px;
+        }
+        &.ms__right {
+          width: 50px;
+          right: -20px;
+        }
+      }
+    }
+  }
+  .ms__section__2 {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    & > h2 {
+      font-size: 2rem;
+      line-height: 2rem;
+      text-align: start;
+    }
+    .section__cards {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+  .ms__section__3 {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+    & > div:nth-child(2) {
+      & > a {
+        align-self: center;
+      }
+    }
+  }
+  .ms__section__4 {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+    .ms__section__image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .ms__section__5 {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 150vw;
+    & > div:nth-child(1) {
+      .ms__arrows_buttons {
         display: none;
       }
+    }
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      .ms__card {
+        min-width: 80%;
+      }
+    }
+  }
+  .ms__section__6 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    & > div {
+      flex-direction: column;
+    }
+  }
+  .ms__section__7 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    & > div {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .ms__section__8 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-position: top;
+    & > div {
+      flex-direction: column;
+    }
+  }
+  .ms__footer {
+    flex-direction: column-reverse;
+    & > div {
+      flex-direction: column;
+      gap: 3rem;
     }
   }
 }

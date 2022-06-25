@@ -1,15 +1,23 @@
 @import "../theme/variables";
-.ms-header {
+.ms__header {
   position: relative;
   display: flex;
+  z-index: 1;
+  .ms__toggler{
+    display: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    outline: 0;
+    background-color: #65e4a3;
+    cursor: pointer;
+  }
 }
-.ms-links {
+.ms__links {
   display: flex;
   flex-direction: row;
   flex: 1;
   justify-content: flex-end;
-}
-.ms-links {
   a {
     font-size: 1rem;
     color: map-get($colors, "color-4");
@@ -27,16 +35,46 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
-  .ms-header {
+@media screen and (max-width: map-get($break-points,'md')) {
+  .ms__header {
     display: flex;
     flex-direction: column;
+    & > div:nth-child(1){
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .ms__toggler{
+      display: inline-block;
+
+      
+    }
   }
-  .ms-links {
+  .ms__links {
     display: flex;
     flex-direction: column;
     height: 0;
     flex: unset;
     overflow: hidden;
+    &.ms__active{
+      height: fit-content;
+      background-color: #ffffff;
+      border-radius: 12px;
+      margin-top: 0.5rem;
+      gap: 1rem;
+     
+      a{
+        color: #0a2640;
+        padding: 0.8rem;
+        margin: 0.5rem;
+        border-radius: 12px;
+        &:hover{
+          background-color: #0a2640;
+          color: #ffffff;
+        
+        }
+      }
+    }
   }
 }
