@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/mahmoudshahin1111/boldo/static/css/main.4baeb86a.css",
-    "main.js": "/mahmoudshahin1111/boldo/static/js/main.0412c5e8.js",
-    "static/js/787.3c91c84e.chunk.js": "/mahmoudshahin1111/boldo/static/js/787.3c91c84e.chunk.js",
-    "static/media/section6mainImage.png": "/mahmoudshahin1111/boldo/static/media/section6mainImage.39a39c391880b29b8e5c.png",
-    "static/media/section4connect2.png": "/mahmoudshahin1111/boldo/static/media/section4connect2.1664cd420e0bf140c265.png",
-    "static/media/section3connect.png": "/mahmoudshahin1111/boldo/static/media/section3connect.bbbe9e652bfdcc1684aa.png",
-    "static/media/hero graphics (1).png": "/mahmoudshahin1111/boldo/static/media/hero graphics (1).10fa7d3f97b932105553.png",
-    "static/media/section2card2.png": "/mahmoudshahin1111/boldo/static/media/section2card2.23a483a8e7b228d16a9c.png",
-    "static/media/section2card1.png": "/mahmoudshahin1111/boldo/static/media/section2card1.305ae7a6d22f85b2ca26.png",
-    "static/media/section7card1.png": "/mahmoudshahin1111/boldo/static/media/section7card1.10e0ea8022c732c110e3.png",
-    "static/media/banner-background.png": "/mahmoudshahin1111/boldo/static/media/banner-background.c0e3b6e95fade03ca04b.png",
-    "static/media/Logo (1).svg": "/mahmoudshahin1111/boldo/static/media/Logo (1).b2b55c1691d6aa1cb2dc9ea6ff69b134.svg",
-    "static/media/Logo (2).svg": "/mahmoudshahin1111/boldo/static/media/Logo (2).3ddd20eb7066c555d49d9b7d6af8689b.svg",
-    "static/media/Logo.svg": "/mahmoudshahin1111/boldo/static/media/Logo.cc96aa8293a5f66a49ded3b2798da2fe.svg",
-    "index.html": "/mahmoudshahin1111/boldo/index.html",
-    "static/media/menu.svg": "/mahmoudshahin1111/boldo/static/media/menu.113d59e2703636dfe157ec8ec962d598.svg",
-    "main.4baeb86a.css.map": "/mahmoudshahin1111/boldo/static/css/main.4baeb86a.css.map",
-    "main.0412c5e8.js.map": "/mahmoudshahin1111/boldo/static/js/main.0412c5e8.js.map",
-    "787.3c91c84e.chunk.js.map": "/mahmoudshahin1111/boldo/static/js/787.3c91c84e.chunk.js.map"
+    "main.css": "/boldo/static/css/main.07aee36d.css",
+    "main.js": "/boldo/static/js/main.92f94109.js",
+    "static/js/787.3c91c84e.chunk.js": "/boldo/static/js/787.3c91c84e.chunk.js",
+    "static/media/section6mainImage.png": "/boldo/static/media/section6mainImage.39a39c391880b29b8e5c.png",
+    "static/media/section4connect2.png": "/boldo/static/media/section4connect2.1664cd420e0bf140c265.png",
+    "static/media/section3connect.png": "/boldo/static/media/section3connect.bbbe9e652bfdcc1684aa.png",
+    "static/media/hero graphics (1).png": "/boldo/static/media/hero graphics (1).10fa7d3f97b932105553.png",
+    "static/media/section2card2.png": "/boldo/static/media/section2card2.23a483a8e7b228d16a9c.png",
+    "static/media/section2card1.png": "/boldo/static/media/section2card1.305ae7a6d22f85b2ca26.png",
+    "static/media/section7card1.png": "/boldo/static/media/section7card1.10e0ea8022c732c110e3.png",
+    "static/media/banner-background.png": "/boldo/static/media/banner-background.c0e3b6e95fade03ca04b.png",
+    "static/media/Logo (1).svg": "/boldo/static/media/Logo (1).b2b55c1691d6aa1cb2dc9ea6ff69b134.svg",
+    "static/media/Logo (2).svg": "/boldo/static/media/Logo (2).3ddd20eb7066c555d49d9b7d6af8689b.svg",
+    "static/media/Logo.svg": "/boldo/static/media/Logo.cc96aa8293a5f66a49ded3b2798da2fe.svg",
+    "index.html": "/boldo/index.html",
+    "static/media/menu.svg": "/boldo/static/media/menu.113d59e2703636dfe157ec8ec962d598.svg",
+    "main.07aee36d.css.map": "/boldo/static/css/main.07aee36d.css.map",
+    "main.92f94109.js.map": "/boldo/static/js/main.92f94109.js.map",
+    "787.3c91c84e.chunk.js.map": "/boldo/static/js/787.3c91c84e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4baeb86a.css",
-    "static/js/main.0412c5e8.js"
+    "static/css/main.07aee36d.css",
+    "static/js/main.92f94109.js"
   ]
 }
