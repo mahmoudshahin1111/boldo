@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/boldo/static/css/main.07aee36d.css",
-    "main.js": "/boldo/static/js/main.a55a8e17.js",
+    "main.js": "/boldo/static/js/main.d30af116.js",
     "static/js/787.3c91c84e.chunk.js": "/boldo/static/js/787.3c91c84e.chunk.js",
     "static/media/section6mainImage.png": "/boldo/static/media/section6mainImage.39a39c391880b29b8e5c.png",
     "static/media/section4connect2.png": "/boldo/static/media/section4connect2.1664cd420e0bf140c265.png",
@@ -17,11 +17,11 @@
     "index.html": "/boldo/index.html",
     "static/media/menu.svg": "/boldo/static/media/menu.113d59e2703636dfe157ec8ec962d598.svg",
     "main.07aee36d.css.map": "/boldo/static/css/main.07aee36d.css.map",
-    "main.a55a8e17.js.map": "/boldo/static/js/main.a55a8e17.js.map",
+    "main.d30af116.js.map": "/boldo/static/js/main.d30af116.js.map",
     "787.3c91c84e.chunk.js.map": "/boldo/static/js/787.3c91c84e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07aee36d.css",
-    "static/js/main.a55a8e17.js"
+    "static/js/main.d30af116.js"
   ]
 }
